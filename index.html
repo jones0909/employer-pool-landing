@@ -27,13 +27,41 @@
     .nav-links a.cta:hover{background:var(--orange-hover)}
 
     /* HERO */
-    .hero{padding:160px 0 var(--section-pad)}
+    .hero{padding:140px 0 80px;position:relative;overflow:hidden;background:linear-gradient(160deg,#FFF 0%,#FFF8F5 40%,#FFF3ED 100%)}
+    .hero-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center}
+    .hero-content{position:relative;z-index:2}
     .hero-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:32px}
     .hero-badge::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--orange)}
-    .hero h1{font-size:clamp(40px,5.5vw,64px);font-weight:900;line-height:1.08;letter-spacing:-0.03em;color:var(--black);max-width:900px}
+    .hero h1{font-size:clamp(36px,4.5vw,56px);font-weight:900;line-height:1.1;letter-spacing:-0.03em;color:var(--black);max-width:600px}
     .hero h1 .fade{color:#C0C0C0}
-    .hero-sub{font-size:18px;line-height:1.7;color:var(--gray-dark);max-width:640px;margin-top:32px}
-    .hero-cta{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
+    .hero-sub{font-size:17px;line-height:1.7;color:var(--gray-dark);max-width:520px;margin-top:28px}
+    .hero-cta{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+    .hero-trust{display:flex;gap:24px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(0,0,0,0.06)}
+    .hero-trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-dark);font-weight:500}
+    .hero-trust-item svg{width:18px;height:18px;flex-shrink:0}
+    .hero-visual{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;min-height:420px}
+    .hero-card{background:white;border-radius:16px;padding:24px 28px;box-shadow:0 4px 32px rgba(0,0,0,0.06);position:absolute;backdrop-filter:blur(8px)}
+    .hero-card-1{top:20px;right:20px;animation:float1 6s ease-in-out infinite}
+    .hero-card-2{bottom:60px;left:0;animation:float2 7s ease-in-out infinite}
+    .hero-card-3{top:50%;right:0;transform:translateY(-50%);animation:float3 5s ease-in-out infinite}
+    .hero-card h4{font-size:13px;font-weight:700;margin-bottom:4px}
+    .hero-card p{font-size:11px;color:var(--gray-mid);line-height:1.4}
+    .hero-card .tag{display:inline-block;background:var(--orange-light);color:var(--orange);font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;margin-bottom:8px}
+    .hero-card .num{font-size:28px;font-weight:900;color:var(--orange)}
+    .hero-blob{position:absolute;width:320px;height:320px;background:radial-gradient(circle,rgba(255,77,0,0.08) 0%,transparent 70%);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%)}
+    .hero-dots{position:absolute;top:40px;left:40px;display:grid;grid-template-columns:repeat(5,8px);gap:12px}
+    .hero-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,77,0,0.15)}
+    .hero-dots span:nth-child(3){background:var(--orange)}
+    .hero-dots span:nth-child(7){background:var(--orange);opacity:0.5}
+    @keyframes float1{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    @keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+    @keyframes float3{0%,100%{transform:translateY(-50%) translateX(0)}50%{transform:translateY(calc(-50% - 8px)) translateX(-5px)}}
+    @media(max-width:768px){
+      .hero-inner{grid-template-columns:1fr}
+      .hero-visual{display:none}
+      .hero h1{font-size:clamp(32px,7vw,48px)}
+      .hero-trust{flex-direction:column;gap:12px}
+    }
 
     /* STATS */
     .stats-bar{padding:60px 0;border-top:1px solid rgba(0,0,0,0.06);border-bottom:1px solid rgba(0,0,0,0.06)}
@@ -173,15 +201,51 @@ fetch('/content/landing.json')
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <div class="hero-badge">${esc(d.hero.badge)}</div>
-        <h1>${esc(d.hero.title_bold)}<span class="fade">${esc(d.hero.title_fade)}</span></h1>
-        <p class="hero-sub">${esc(d.hero.subtitle)}</p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn-primary">
-            ${esc(d.hero.cta_primary)}
-            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#how" class="btn-outline">${esc(d.hero.cta_secondary)}</a>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge">${esc(d.hero.badge)}</div>
+            <h1>${esc(d.hero.title_bold)}<span class="fade">${esc(d.hero.title_fade)}</span></h1>
+            <p class="hero-sub">${esc(d.hero.subtitle)}</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn-primary">
+                ${esc(d.hero.cta_primary)}
+                <svg viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#how" class="btn-outline">${esc(d.hero.cta_secondary)}</a>
+            </div>
+            <div class="hero-trust">
+              <div class="hero-trust-item">
+                <svg viewBox="0 0 18 18" fill="none"><path d="M9 1l2.2 4.5L16 6.3l-3.5 3.4.8 4.8L9 12.3 4.7 14.5l.8-4.8L2 6.3l4.8-.8L9 1z" fill="#FF4D00"/></svg>
+                零招聘费用
+              </div>
+              <div class="hero-trust-item">
+                <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 13 3 9" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                预筛选人才
+              </div>
+              <div class="hero-trust-item">
+                <svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#FF4D00" stroke-width="2"/><path d="M9 5v4l2.5 1.5" stroke="#FF4D00" stroke-width="2" stroke-linecap="round"/></svg>
+                5-7 天匹配
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-blob"></div>
+            <div class="hero-dots">${Array(15).fill('<span></span>').join('')}</div>
+            <div class="hero-card hero-card-1">
+              <div class="tag">匹配成功</div>
+              <h4>市场营销实习生</h4>
+              <p>新加坡 · 远程 · 3个月</p>
+            </div>
+            <div class="hero-card hero-card-2">
+              <div class="num">63%</div>
+              <p>实习转全职转化率</p>
+            </div>
+            <div class="hero-card hero-card-3">
+              <div class="tag">新岗位</div>
+              <h4>全栈开发实习生</h4>
+              <p>吉隆坡 · 线下 · 6个月</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
