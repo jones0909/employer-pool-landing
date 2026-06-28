@@ -1,0 +1,116 @@
+backend:
+  name: github
+  repo: jones0909/employer-pool-landing
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "landing"
+    label: "Landing Page"
+    files:
+      - name: "content"
+        label: "Page Content"
+        file: "content/landing.json"
+        format: "json"
+        fields:
+          # ─── HERO ───
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Title (Bold Part)", name: "title_bold", widget: "string" }
+              - { label: "Title (Faded Part)", name: "title_fade", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+
+          # ─── STATS ───
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Source", name: "source", widget: "string" }
+
+          # ─── MARQUEE ───
+          - label: "Marquee Keywords"
+            name: "marquee"
+            widget: "list"
+            field: { label: "Keyword", name: "keyword", widget: "string" }
+
+          # ─── CAPABILITIES ───
+          - label: "Capabilities"
+            name: "capabilities"
+            widget: "list"
+            fields:
+              - { label: "Module ID", name: "id", widget: "string" }
+              - { label: "Module Label (Chinese)", name: "id_label", widget: "string" }
+              - { label: "Title (English)", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
+
+          # ─── PIPELINE ───
+          - label: "Pipeline Steps"
+            name: "pipeline"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "string" }
+
+          # ─── FUNNEL ───
+          - label: "Funnel"
+            name: "funnel"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Width %", name: "width", widget: "number", value_type: "int", min: 5, max: 100 }
+
+          # ─── COUNTRIES ───
+          - label: "Countries"
+            name: "countries"
+            widget: "list"
+            fields:
+              - { label: "Priority (P0/P1/P2)", name: "priority", widget: "select", options: ["P0", "P1", "P2"] }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+
+          # ─── ROADMAP ───
+          - label: "Roadmap"
+            name: "roadmap"
+            widget: "list"
+            fields:
+              - { label: "Week", name: "week", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Small Win", name: "win", widget: "string" }
+
+          # ─── RISKS ───
+          - label: "Risks"
+            name: "risks"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+
+          # ─── CTA ───
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Title Text", name: "title_text", widget: "string" }
+              - { label: "Title Accent", name: "title_accent", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Primary Button", name: "primary_btn", widget: "string" }
+              - { label: "Secondary Button", name: "secondary_btn", widget: "string" }
+
+          # ─── FOOTER ───
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Copyright", name: "copyright", widget: "string" }
