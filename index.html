@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>国际实习人才匹配服务 | From Mars</title>
-  <meta name="description" content="为中小企业和大型企业匹配经过筛选和培训的国际实习生。零招聘成本，快速匹配，全程跟进。">
+  <title>International Intern Matching | Employer Pool AI Studio</title>
+  <meta name="description" content="We match SMEs and corporates with pre-screened, trained international interns. Zero recruitment cost, fast matching, full support.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -171,13 +171,13 @@
         <circle cx="8" cy="24" r="6" fill="#FF4D00"/>
         <circle cx="24" cy="24" r="6" fill="#FF4D00"/>
       </svg>
-      <span>FROM MARS</span>
+      <span>EMPLOYER POOL AI</span>
     </a>
     <div class="nav-links">
-      <a href="#how">流程</a>
-      <a href="#benefits">优势</a>
-      <a href="#roles">岗位</a>
-      <a href="#contact" class="cta">免费咨询</a>
+      <a href="#how">How It Works</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#roles">Roles</a>
+      <a href="#contact" class="cta">Free Consultation</a>
     </div>
   </div>
 </nav>
@@ -216,15 +216,15 @@ fetch('/content/landing.json')
             <div class="hero-trust">
               <div class="hero-trust-item">
                 <svg viewBox="0 0 18 18" fill="none"><path d="M9 1l2.2 4.5L16 6.3l-3.5 3.4.8 4.8L9 12.3 4.7 14.5l.8-4.8L2 6.3l4.8-.8L9 1z" fill="#FF4D00"/></svg>
-                零招聘费用
+                Zero Cost
               </div>
               <div class="hero-trust-item">
                 <svg viewBox="0 0 18 18" fill="none"><path d="M15 5L7.5 13 3 9" stroke="#FF4D00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                预筛选人才
+                Pre-Screened
               </div>
               <div class="hero-trust-item">
                 <svg viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#FF4D00" stroke-width="2"/><path d="M9 5v4l2.5 1.5" stroke="#FF4D00" stroke-width="2" stroke-linecap="round"/></svg>
-                5-7 天匹配
+                5–7 Day Match
               </div>
             </div>
           </div>
@@ -232,18 +232,18 @@ fetch('/content/landing.json')
             <div class="hero-blob"></div>
             <div class="hero-dots">${Array(15).fill('<span></span>').join('')}</div>
             <div class="hero-card hero-card-1">
-              <div class="tag">匹配成功</div>
-              <h4>市场营销实习生</h4>
-              <p>新加坡 · 远程 · 3个月</p>
+              <div class="tag">Matched</div>
+              <h4>Marketing Intern</h4>
+              <p>Singapore · Remote · 3 months</p>
             </div>
             <div class="hero-card hero-card-2">
               <div class="num">63%</div>
-              <p>实习转全职转化率</p>
+              <p>Intern-to-fulltime conversion</p>
             </div>
             <div class="hero-card hero-card-3">
-              <div class="tag">新岗位</div>
-              <h4>全栈开发实习生</h4>
-              <p>吉隆坡 · 线下 · 6个月</p>
+              <div class="tag">New Role</div>
+              <h4>Full-Stack Dev Intern</h4>
+              <p>Kuala Lumpur · On-site · 6 months</p>
             </div>
           </div>
         </div>
@@ -256,7 +256,7 @@ fetch('/content/landing.json')
         <div class="stats-grid">
           ${d.stats.map(s => `
             <div class="stat-item">
-              <div class="stat-num">${s.num === '0' ? '¥0' : esc(s.num)}</div>
+              <div class="stat-num">${s.num === '0' ? '$0' : esc(s.num)}</div>
               <div class="stat-label">${esc(s.label)}</div>
               ${s.source ? `<div class="stat-source">${esc(s.source)}</div>` : ''}
             </div>
@@ -357,7 +357,7 @@ fetch('/content/landing.json')
     <!-- CTA -->
     <section class="cta-section section" id="contact">
       <div class="container">
-        <div class="section-label" style="justify-content:center;">开始合作</div>
+        <div class="section-label" style="justify-content:center;">Get Started</div>
         <h2>${esc(d.cta.title_text)}<span class="accent">${esc(d.cta.title_accent)}</span></h2>
         <p>${esc(d.cta.subtitle)}</p>
         <div class="cta-buttons">
@@ -367,8 +367,8 @@ fetch('/content/landing.json')
           </a>
         </div>
         <div class="cta-contact">
-          邮箱：<a href="mailto:${esc(d.cta.contact_email)}">${esc(d.cta.contact_email)}</a>
-          ${d.cta.contact_wechat ? ` &nbsp;|&nbsp; 微信：${esc(d.cta.contact_wechat)}` : ''}
+          Email: <a href="mailto:${esc(d.cta.contact_email)}">${esc(d.cta.contact_email)}</a>
+          ${d.cta.contact_wechat ? ` &nbsp;|&nbsp; WeChat: ${esc(d.cta.contact_wechat)}` : ''}
         </div>
       </div>
     </section>
@@ -379,10 +379,10 @@ fetch('/content/landing.json')
         <div class="footer-inner">
           <div class="footer-left">${esc(d.footer.copyright)}</div>
           <div class="footer-links">
-            <a href="#how">流程</a>
-            <a href="#benefits">优势</a>
-            <a href="#roles">岗位</a>
-            <a href="#contact">联系</a>
+            <a href="#how">How It Works</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#roles">Roles</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>

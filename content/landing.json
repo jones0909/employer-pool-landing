@@ -1,97 +1,97 @@
 {
   "hero": {
-    "badge": "国际实习人才匹配服务",
-    "title_bold": "为您的企业匹配",
-    "title_fade": "经过筛选和培训的国际实习生",
-    "subtitle": "我们帮助中小企业和大型企业快速找到合适的实习人才。从需求确认到入职跟进，全程专人对接，零招聘负担。",
-    "cta_primary": "免费咨询",
-    "cta_secondary": "了解服务"
+    "badge": "International Intern Matching Service",
+    "title_bold": "We Match Your Business With ",
+    "title_fade": "Pre-Screened & Trained International Interns",
+    "subtitle": "We help SMEs and corporates find the right intern talent fast. From requirement to onboarding, we handle everything — zero recruitment cost to you.",
+    "cta_primary": "Free Consultation",
+    "cta_secondary": "Learn More"
   },
   "stats": [
-    { "num": "63%", "label": "实习生最终转为全职员工", "source": "NACE 2026" },
-    { "num": "88%", "label": "实习生接受全职录用", "source": "NACE 2026" },
-    { "num": "30+", "label": "覆盖国家和地区", "source": "" },
-    { "num": "0", "label": "企业端招聘费用", "source": "" }
+    { "num": "63%", "label": "of interns convert to full-time hires", "source": "NACE 2026" },
+    { "num": "88%", "label": "of interns accept full-time offers", "source": "NACE 2026" },
+    { "num": "30+", "label": "countries & regions covered", "source": "" },
+    { "num": "0", "label": "recruitment cost to employers", "source": "" }
   ],
-  "marquee": ["预筛选人才", "多语言能力", "远程或线下", "灵活实习周期", "专业背景匹配", "全程跟进支持", "免费企业咨询", "快速响应"],
+  "marquee": ["Pre-Screened Talent", "Multilingual", "Remote or On-Site", "Flexible Duration", "Skills-Matched", "Full Support", "Free Consultation", "Fast Turnaround"],
   "pain_points": {
-    "label": "企业痛点",
-    "title": "招实习生",
-    "title_accent": "不应该这么难",
+    "label": "The Problem",
+    "title": "Hiring Interns ",
+    "title_accent": "Shouldn't Be This Hard",
     "items": [
       {
         "icon": "clock",
-        "title": "招聘周期太长",
-        "desc": "从发布岗位到筛选简历、安排面试，往往需要数周甚至数月，占用大量 HR 时间。"
+        "title": "Hiring Takes Too Long",
+        "desc": "Posting roles, screening resumes, scheduling interviews — weeks or months of HR time wasted before you find a single candidate."
       },
       {
         "icon": "filter",
-        "title": "候选人质量参差不齐",
-        "desc": "收到大量不匹配的申请，真正符合要求的候选人却很难找到。"
+        "title": "Candidate Quality Is Inconsistent",
+        "desc": "Flooded with unqualified applications while the right candidates remain invisible. Finding the right fit feels like guessing."
       },
       {
         "icon": "globe",
-        "title": "国际人才获取困难",
-        "desc": "想招有国际视野或多语言能力的实习生，但不知道从哪里找、怎么筛选。"
+        "title": "International Talent Is Hard to Access",
+        "desc": "You want interns with global perspectives and multilingual skills, but sourcing and vetting them across borders is complex."
       }
     ]
   },
   "how_it_works": {
-    "label": "合作流程",
-    "title": "三步开始",
-    "title_accent": "，简单高效",
+    "label": "How It Works",
+    "title": "3 Simple Steps",
+    "title_accent": " to Get Started",
     "steps": [
-      { "num": "1", "title": "告诉我们您的需求", "desc": "岗位职责、技能要求、实习时长、远程或线下 — 15 分钟沟通即可。" },
-      { "num": "2", "title": "我们为您匹配候选人", "desc": "根据您的需求，从我们的人才库中精准匹配 3-5 位经过预筛选的候选人。" },
-      { "num": "3", "title": "面试、录用、开始实习", "desc": "您直接面试候选人，满意即可录用。我们全程跟进实习过程，确保双方满意。" }
+      { "num": "1", "title": "Tell Us Your Needs", "desc": "Role, skills, duration, remote or on-site — a 15-minute call is all it takes." },
+      { "num": "2", "title": "We Match Candidates", "desc": "We handpick 3–5 pre-screened candidates from our talent pool, matched to your exact requirements." },
+      { "num": "3", "title": "Interview & Hire", "desc": "You interview the candidates directly. Happy with them? Hire and start. We follow up throughout the internship." }
     ]
   },
   "benefits": {
-    "label": "企业收益",
-    "title": "为什么选择",
-    "title_accent": "我们的服务",
+    "label": "Why Us",
+    "title": "Why Choose ",
+    "title_accent": "Employer Pool AI Studio",
     "items": [
-      { "title": "零招聘成本", "desc": "企业端完全免费。我们承担所有筛选、匹配和协调工作。" },
-      { "title": "预筛选人才", "desc": "每位候选人都经过简历审核、技能评估和背景核实，节省您的筛选时间。" },
-      { "title": "灵活实习安排", "desc": "支持远程、线下或混合模式，实习周期从 1 个月到 12 个月灵活选择。" },
-      { "title": "多语言人才", "desc": "候选人具备中英双语能力，部分掌握日语、韩语或其他语言，适合跨境业务。" },
-      { "title": "快速匹配", "desc": "从需求确认到推荐候选人，通常 5-7 个工作日内完成。" },
-      { "title": "全程跟进", "desc": "实习期间持续跟进，处理任何问题，确保实习体验顺利。" }
+      { "title": "Zero Cost to You", "desc": "Completely free for employers. We handle all screening, matching, and coordination at no charge." },
+      { "title": "Pre-Screened Talent", "desc": "Every candidate goes through resume review, skills assessment, and background verification — saving you hours of screening." },
+      { "title": "Flexible Arrangements", "desc": "Remote, on-site, or hybrid. Internship durations from 1 month to 12 months — whatever fits your needs." },
+      { "title": "Multilingual Candidates", "desc": "Candidates fluent in English and Chinese, with many also proficient in Japanese, Korean, or other languages." },
+      { "title": "Fast Matching", "desc": "From confirmed requirements to recommended candidates — typically within 5–7 business days." },
+      { "title": "End-to-End Support", "desc": "We stay involved throughout the internship, handling any issues and ensuring a smooth experience for both sides." }
     ]
   },
   "roles": {
-    "label": "适合岗位",
-    "title": "我们匹配的",
-    "title_accent": "实习岗位类型",
+    "label": "Roles We Fill",
+    "title": "Internship Roles ",
+    "title_accent": "We Match",
     "categories": [
-      { "title": "市场营销", "examples": "社交媒体运营、内容创作、SEO/SEM、市场调研、品牌策划" },
-      { "title": "商务拓展", "examples": "客户开发、市场拓展、合作伙伴管理、销售支持" },
-      { "title": "技术开发", "examples": "前端/后端开发、数据分析、AI/ML、产品测试" },
-      { "title": "设计创意", "examples": "UI/UX 设计、平面设计、视频剪辑、动效设计" },
-      { "title": "运营管理", "examples": "项目协调、客户服务、供应链支持、行政助理" },
-      { "title": "财务法务", "examples": "财务分析、审计支持、合规研究、法律调研" }
+      { "title": "Marketing", "examples": "Social media, content creation, SEO/SEM, market research, brand strategy" },
+      { "title": "Business Development", "examples": "Client outreach, market expansion, partnership management, sales support" },
+      { "title": "Tech & Engineering", "examples": "Frontend/backend dev, data analysis, AI/ML, QA testing" },
+      { "title": "Design & Creative", "examples": "UI/UX design, graphic design, video editing, motion graphics" },
+      { "title": "Operations", "examples": "Project coordination, customer service, supply chain support, admin" },
+      { "title": "Finance & Legal", "examples": "Financial analysis, audit support, compliance research, legal research" }
     ]
   },
   "trust": {
-    "label": "服务保障",
-    "title": "每一位推荐的候选人",
-    "title_accent": "都经过严格筛选",
+    "label": "Quality Guarantee",
+    "title": "Every Candidate We Recommend ",
+    "title_accent": "Is Rigorously Vetted",
     "items": [
-      { "title": "学历背景核实", "desc": "确认在读院校、专业和年级，确保信息真实。" },
-      { "title": "技能与经验评估", "desc": "根据岗位要求评估候选人的技能匹配度和相关经验。" },
-      { "title": "语言能力确认", "desc": "通过测试或面谈确认候选人的实际语言水平。" },
-      { "title": "签证可行性评估", "desc": "提前确认候选人的签证状态和实习合法性，避免后续问题。" }
+      { "title": "Education Verified", "desc": "We confirm university enrollment, major, and year to ensure all information is accurate." },
+      { "title": "Skills & Experience Assessed", "desc": "Candidates are evaluated for role-specific skills and relevant experience before being recommended." },
+      { "title": "Language Proficiency Confirmed", "desc": "Actual language ability is verified through testing or interview — not just self-reported levels." },
+      { "title": "Visa Feasibility Checked", "desc": "We assess visa status and internship legality upfront, so there are no surprises down the road." }
     ]
   },
   "cta": {
-    "title_text": "准备好找到",
-    "title_accent": "合适的实习人才了吗？",
-    "subtitle": "15 分钟免费咨询，了解我们如何帮您快速匹配实习生。无任何费用，无任何风险。",
-    "primary_btn": "预约免费咨询",
-    "contact_email": "team@frommars.studio",
-    "contact_wechat": "FromMarsStudio"
+    "title_text": "Ready to Find ",
+    "title_accent": "the Right Intern Talent?",
+    "subtitle": "15-minute free consultation to learn how we can match interns for you. No cost. No risk. No obligation.",
+    "primary_btn": "Book Free Consultation",
+    "contact_email": "team@employerpool.ai",
+    "contact_wechat": "EmployerPoolAI"
   },
   "footer": {
-    "copyright": "© 2026 From Mars Studio · 国际实习人才匹配服务"
+    "copyright": "© 2026 Employer Pool AI Studio · International Intern Matching Service"
   }
 }
